@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PhongBanChucVu</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" href="../css/PB_CV.css">
+    <link href="homeUser.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e30fef577.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p class="logo">Chào mừng bạn đến với trang quản lý</p>
+    <div class="header">
+        <ul>
+            <li><a href="/home?pageView=1">Nhân viên</a></li>
+            <li><a href="/home?pageView=2">Phòng ban_chức vụ</a></li>
+            <li><a href="/home?pageView=3">Hợp đồng lao động</a></li>
+            <li><a href="/home?pageView=4">Lương</a></li>
+            <li><a href="/"><i class="fas fa-sign-out-alt"></i></a></li>
+            <form action="/logout" method="post" name="logoutForm" hidden="hidden">
+                <input type="submit" value="Logout" />
+            </form>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1><i class="far fa-building"></i> Thông tin chức vụ - phòng ban làm việc</h1>
+        <hr>
+            <h2><i class="fas fa-door-closed"></i>Thông tin phòng ban</h2>
+            <table>
+                <tr>
+                    <td>Mã số phòng ban</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Tên phòng ban</td>
+                    <td>Ban kiểm soát</td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại phòng ban</td>
+                    <td>543354533</td>
+                </tr>
+                <tr>
+                    <td>Email phòng ban</td>
+                    <td>105@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ phòng ban</td>
+                    <td>Phòng 105</td>
+                </tr>
+            </table>
+
+        <br>
+        
+        <h2><i class="fas fa-briefcase"></i> Thông tin chức vụ</h2>
+        <table>
+            <tr>
+                <td>Tên chức vụ</td>
+                <div>
+                    <td>Giám Đốc</td>
+                </div>
+            </tr>
+            <tr>
+                <td>Ngày bắt đầu chức vụ</td>
+                <td>2020-04-09</td>
+            </tr>
+            <tr>
+                <td>Ngày kết thúc chức vụ</td>
+                <div>
+                    <td>Chưa rõ</td>
+                </div>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>Tên chức vụ</td>
+                <div>
+                    <td>Nhân Viên</td>
+                </div>
+            </tr>
+            <tr>
+                <td>Ngày bắt đầu chức vụ</td>
+                <td>2020-04-01</td>
+            </tr>
+            <tr>
+                <td>Ngày kết thúc chức vụ</td>
+                <div>
+                    <td>2020-04-07</td>
+                </div>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

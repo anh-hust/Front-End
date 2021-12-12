@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="homeUser.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/nhan_vien.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e30fef577.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p class="logo">Chào mừng bạn đến với trang quản lý</p>
+    <div class="header">
+        <ul>
+            <li><a href="/home?pageView=1">Nhân viên</a></li>
+            <li><a href="/home?pageView=2">Phòng ban_chức vụ</a></li>
+            <li><a href="/home?pageView=3">Hợp đồng lao động</a></li>
+            <li><a href="/home?pageView=4">Lương</a></li>
+            <li><a href="/"><i class="fas fa-sign-out-alt"></i></a></li>
+            <form action="/logout" method="post" name="logoutForm" hidden="hidden">
+                <input type="submit" value="Logout" />
+            </form>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1><i class="fas fa-users"></i> Thông tin nhân viên</h1>
+        <hr>
+        <div class="info">
+            <table>
+                <tr>
+                    <td>Mã số nhân viên</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Tên nhân viên</td>
+                    <td>Cao Huy thịnh</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>cuongcaohuy@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại</td>
+                    <td>04994949444</td>
+                </tr>
+                <tr>
+                    <td>Số chứng minh thư</td>
+                    <td>8588447</td>
+                </tr>
+                <tr>
+                    <td>Công việc hiện tại</td>
+                    <td>DEV</td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ hiện tại</td>
+                    <td>Lương Tài - Bắc Ninh</td>
+                </tr>
+                <tr>
+                    <td>Quê quán</td>
+                    <td>Bắc Ninh</td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td>2000-02-04</td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>Nam</td>
+                </tr>
+                <tr>
+                    <td>Dân tộc</td>
+                    <td>Kinh</td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>Thể thao</td>
+                </tr>
+                <tr>
+                    <td>Chức vụ hiện tại</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Phòng ban làm việc</td>
+                    <td>Ban kiểm soát</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="avatar-container">
+            <div>Ảnh đại diện</div>
+            <img src="../img/single-neutral-x6gbjp71tgjumzzej5bp7.png">
+            <div class="clearfix"></div>
+            <a href="/editUser?MSNV=1">Chỉnh sửa thông tin</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

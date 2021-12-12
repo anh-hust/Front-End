@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="editUser.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/change_info.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e30fef577.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1><i class="fas fa-user-edit"></i> Chỉnh sửa thông tin nhân viên</h1>
+        <hr>
+        <form action="/home" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="MSNV" id="MSNV" value="1">
+            <h2>Thông tin đăng nhập</h2>
+            <table>
+                <tr>
+                    <td><span>Tên đăng nhập</span></td>
+                    <td><input value="traistorm" name="tenDangNhap" id="tenDangNhap" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Mật khẩu</div>
+                    </td>
+                    <td><input type="text" name="matKhau" id="matKhau"></td>
+                </tr>
+            </table>
+
+            <h2>Thông tin cá nhân</h2>
+            <table>
+                <tr>
+                    <td><span>Mã số nhân viên</span></td>
+                    <td>
+                        <div>1</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Tên nhân viên</span></td>
+                    <td>
+                        <div>Cao Huy thịnh</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Số điện thoại</span></td>
+                    <td><input type="String" value="04994949444" id="SDT" name="SDT" required></td>
+                </tr>
+                <tr>
+                    <td><span>Email</span></td>
+                    <td><input type="String" value="cuongcaohuy@gmail.com" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Số chứng minh thư</span></td>
+                    <td>
+                        <div>8588447</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Địa chỉ hiện tại</span></td>
+                    <td><input type="String" value="Lương Tài - Bắc Ninh" id="diaChiHienTai" name="diaChiHienTai"
+                            required></td>
+                </tr>
+                <tr>
+                    <td><span>Quê quán</span></td>
+                    <td><input type="String" value="Bắc Ninh" id="queQuan" name="queQuan" required></td>
+                </tr>
+                <tr>
+                    <td><span>Ngày sinh</span></td>
+                    <td><input type="date" value="2000-02-04" id="ngaySinh" name="ngaySinh" required></td>
+                </tr>
+                <tr>
+                    <td><span>Giới tính</span></td>
+                    <td>
+                        <select name="gioiTinh" id="gioiTinh">
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Không rõ">Không rõ</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Dân tộc</span></td>
+                    <td><input type="text" value="Tày" id="danToc" name="danToc" required></td>
+                </tr>
+                <tr>
+                    <td><span>Sở thích</span></td>
+                    <td><input type="text" value="Thể thao" id="soThich" name="soThich" required></td>
+                </tr>
+                <tr>
+                    <td><span>Ảnh đại diện</span></td>
+                    <td><input type="file" name="avatarEdit" class="form-control-file"></td>
+                </tr>
+            </table>
+            <input type="hidden" name="action" value="editInfoUserConfirm">
+            <input type="hidden" name="pageView" value="1">
+            <input class="button" type="submit" value="Xác nhận">
+        </form>
+    </div>
+</body>
+
+</html>
